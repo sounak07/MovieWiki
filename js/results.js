@@ -15,12 +15,10 @@ function getMovies() {
                         if (movie.Poster == "N/A") movie.Poster = "https://via.placeholder.com/350x530?text=No+Image+found";
                         output += `
                         <div class="card">
-                          <img src="${movie.Poster}">
+                        <a onclick="movieSelected('${movie.imdbID}')" class="" href="#"><img src="${movie.Poster}"></a>
                           <div class="container">
                              <h5><b>${movie.Title}</b></h5>
-                             <p>
-                               <a onclick="movieSelected('${movie.imdbID}')" class="" href="#">Movie Details</a>
-                             </p>
+                             
                           </div>
                         </div>
                         
