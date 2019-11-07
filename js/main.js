@@ -21,7 +21,7 @@ function getMovies(searchVal) {
                     <div class="mov">
                       <div class="each">
                         <img src="${movie.Poster}">
-                        <h5>${movie.Title}</h5>
+                        <h5 id="tit">${movie.Title}</h5>
                         <a onclick="movieSelected('${movie.imdbID}')" class="" href="#">Movie Details</a>
                       </div>
                     </div>
@@ -30,7 +30,7 @@ function getMovies(searchVal) {
                 })
 
 
-                var d1 = document.getElementById('movies');
+                var d1 = document.querySelector('#extra');
                 d1.insertAdjacentHTML('afterend', output);
             });
 

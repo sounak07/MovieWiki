@@ -36,23 +36,35 @@ body {
 
 
 #movies {
-
-    padding-bottom: 10px;
+    width: 100%;
 }
 
-.mov {
+#movies .mov {
     float: left;
     padding: 20px;
     width: 400px;
-
 }
 
-.mov img {
-    height: 100%;
+#movies .mov img {
+    height: 350px;
 }
 
-.mov h6 {
-    height: 40px;
+#movies .mov .each {
+    height: 390px;
+}
+
+@media(max-width:960px) {
+    #movies .mov img {
+        height: 280px;
+    }
+
+    #movies .mov .each {
+        height: 390px;
+    }
+
+    #movies {
+        width: 100px;
+    }
 }
 
 .each {
