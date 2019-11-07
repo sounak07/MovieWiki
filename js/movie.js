@@ -1,20 +1,21 @@
 function movieSelected(id) {
-    sessionStorage.setItem('movieId', id);
-    window.location = 'movie.html';
-    return false;
+  sessionStorage.setItem('movieId', id);
+  window.location = 'movie.html';
+  return false;
 }
 
 function getMovie() {
-    let movieId = sessionStorage.getItem('movieId');
+  let movieId = sessionStorage.getItem('movieId');
 
-    fetch(`http://www.omdbapi.com/?i=${movieId}&apikey=5868b208`)
-        .then((response) => {
+  fetch(`http://www.omdbapi.com/?i=${movieId}&apikey=5868b208`)
+    .then((response) => {
 
-            response.json().then(function (data) {
+      response.json().then(function (data) {
 
-                let movie = data;
-                let output = `
-                <div class="row">
+        let movie = data;
+        console.log(data)
+        let output = `
+                <div class="row1">
                   <div class="col-md-4">
                     <img src="${movie.Poster}" class="thumbnail">
                   </div>
@@ -31,7 +32,7 @@ function getMovie() {
                     </ul>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row2">
                   <div class="well">
                     <h3>Plot</h3>
                     ${movie.Plot}
@@ -42,15 +43,15 @@ function getMovie() {
                 </div>
               `;
 
-                var d1 = document.querySelector('#newExtra');
-                d1.insertAdjacentHTML('afterend', output);
-            });
+        var d1 = document.querySelector('#newExtra');
+        d1.insertAdjacentHTML('afterend', output);
+      });
 
 
 
 
-        })
-        .catch((err) => {
-            console.log(err);
-        });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
