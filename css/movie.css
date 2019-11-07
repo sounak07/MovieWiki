@@ -55,3 +55,7 @@ h2 {
 .btn-default {
     background-color: rgb(29, 128, 185);
 }
+
+.btn-success {
+    background-color: rgb(25, 158, 47);
+}

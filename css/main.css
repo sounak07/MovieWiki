@@ -5,34 +5,6 @@ body {
     background: #fff;
 }
 
-.search {
-    width: 100%;
-    position: relative;
-    display: flex;
-    padding-bottom: 30px;
-}
-
-.searchTerm {
-    width: 100%;
-    border: 3px solid #00b4cc;
-    /* border-right: none; */
-    padding: 10px;
-    height: 20px;
-    border-radius: 5px;
-    outline: none;
-    font-size: 18px;
-    color: #9dbfaf;
-}
-
-/* #title {
-    margin: 0 auto;
-} */
-
-.searchTerm:focus {
-    color: #00b4cc;
-    font-size: 20px;
-}
-
 #movies {
     margin: 0 auto;
 }

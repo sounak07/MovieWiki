@@ -1,14 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("#searchForm").addEventListener('submit', function (e) {
-        e.preventDefault();
-        let searchVal = document.querySelector("#searchText").value;
-        getMovies(searchVal);
-    })
-});
+function getMovies() {
 
+    let query = sessionStorage.getItem('query');
 
-function getMovies(searchVal) {
-    fetch(`http://www.omdbapi.com/?s=${searchVal}&apikey=5868b208`)
+    fetch(`http://www.omdbapi.com/?s=${query}&apikey=5868b208`)
         .then((response) => {
 
             response.json().then(function (data) {
