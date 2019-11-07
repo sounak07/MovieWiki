@@ -39,3 +39,11 @@ p {
 .wrap {
     padding: 30px 50px 50px 50px;
 }
+
+.button {
+    padding-bottom: 20px;
+}
+
+.no-results {
+    color: red;
+}
