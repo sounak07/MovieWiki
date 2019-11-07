@@ -14,7 +14,6 @@ function getMovies(searchVal) {
             response.json().then(function (data) {
 
                 let movies = data.Search;
-                console.log(movies);
                 let output = '';
                 movies.map(movie => {
                     output += `
@@ -44,6 +43,8 @@ function getMovies(searchVal) {
             console.log(err);
         });
 }
+
+
 
 
 
