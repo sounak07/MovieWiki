@@ -18,11 +18,13 @@ function getMovies(searchVal) {
                 let output = '';
                 movies.map(movie => {
                     output += `
-                    <div class="mov">
-                      <div class="each">
-                        <img src="${movie.Poster}">
-                        <h5 id="tit">${movie.Title}</h5>
-                        <a onclick="movieSelected('${movie.imdbID}')" class="" href="#">Movie Details</a>
+                    <div class="card">
+                      <img src="${movie.Poster}">
+                      <div class="container">
+                         <h5><b>${movie.Title}</b></h5>
+                         <p>
+                           <a onclick="movieSelected('${movie.imdbID}')" class="" href="#">Movie Details</a>
+                         </p>
                       </div>
                     </div>
                     

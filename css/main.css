@@ -1,78 +1,69 @@
 @import url('https://fonts.googleapis.com/css?family=Kodchasan&display=swap');
 
 body {
-    font-family: 'Kodchasan', sans-serif;
-    background: #fff;
+  font-family: 'Kodchasan', sans-serif;
+  background: #fff;
 }
 
 .search {
-    width: 100%;
-    position: relative;
-    display: flex;
-    padding-bottom: 30px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding-bottom: 30px;
 }
 
 .searchTerm {
-    width: 100%;
-    border: 3px solid #00B4CC;
-    /* border-right: none; */
-    padding: 10px;
-    height: 20px;
-    border-radius: 5px;
-    outline: none;
-    font-size: 18px;
-    color: #9DBFAF;
+  width: 100%;
+  border: 3px solid #00b4cc;
+  /* border-right: none; */
+  padding: 10px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  color: #9dbfaf;
 }
 
 /* #title {
     margin: 0 auto;
 } */
 
-
 .searchTerm:focus {
-    color: #00B4CC;
-    font-size: 20px;
+  color: #00b4cc;
+  font-size: 20px;
 }
-
 
 #movies {
-    width: 100%;
+  margin: 0 auto;
 }
 
-#movies .mov {
-    float: left;
-    padding: 20px;
-    width: 400px;
+.card img {
+  width: 250px;
 }
 
-#movies .mov img {
-    height: 350px;
+.card {
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 20px;
+  width: 250px;
+  height: 560px;
 }
 
-#movies .mov .each {
-    height: 390px;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media(max-width:960px) {
-    #movies .mov img {
-        height: 280px;
-    }
-
-    #movies .mov .each {
-        height: 390px;
-    }
-
-    #movies {
-        width: 100px;
-    }
+.container h5,
+p {
+  padding: 10px;
 }
 
-.each {
-    padding-top: 10px;
+.container {
+  padding: 2px 5px;
 }
-
 
 /*Resize the wrap to see the search bar change!*/
 .wrap {
-    padding: 30px 50px 50px 50px;
+  padding: 30px 50px 50px 50px;
 }
