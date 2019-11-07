@@ -12,6 +12,7 @@ function getMovies() {
 
                 if (typeof movies !== 'undefined' && movies.length > 0) {
                     movies.map(movie => {
+                        if (movie.Poster == "N/A") movie.Poster = "https://via.placeholder.com/350x530?text=No+Image+found";
                         output += `
                         <div class="card">
                           <img src="${movie.Poster}">

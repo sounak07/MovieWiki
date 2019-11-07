@@ -19,17 +19,14 @@ body {
     transition: 0.3s;
     padding: 20px;
     width: 250px;
-    height: 560px;
+    height: 530px;
 }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container h5,
-p {
-    padding: 10px;
-}
+
 
 .container {
     padding: 2px 5px;
@@ -38,6 +35,17 @@ p {
 /*Resize the wrap to see the search bar change!*/
 .wrap {
     padding: 30px 50px 50px 50px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-success {
+    background-color: rgb(25, 158, 47);
 }
 
 .button {

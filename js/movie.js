@@ -14,6 +14,7 @@ function getMovie() {
 
         let movie = data;
         console.log(data)
+        if (movie.Poster == "N/A") movie.Poster = "https://via.placeholder.com/350x530?text=No+Image+found";
         let output = `
                 <div class="row1">
                   <div class="col-md-4">
