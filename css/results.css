@@ -5,7 +5,7 @@ body {
     background: #fff;
 }
 
-#movies {
+#results {
     margin: 0 auto;
 }
 
@@ -54,4 +54,11 @@ body {
 
 .no-results {
     color: red;
+}
+
+#show_more {
+    clear: both;
+    display: block;
+    padding: 10px;
+    text-align: center;
 }

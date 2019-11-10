@@ -59,6 +59,7 @@ h2 {
 }
 
 
+/* Media queries for responsiveness */
 
 @media (max-width: 768px) {
     img {

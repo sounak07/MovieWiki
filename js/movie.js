@@ -1,8 +1,12 @@
+//func to get the id of selected movie and store it as session
+
 function movieSelected(id) {
   sessionStorage.setItem('movieId', id);
   window.location = 'movie.html';
   return false;
 }
+
+//func to get movie by id(extracting id from session store) with api call and display contents as unordered list-group
 
 function getMovie() {
   let movieId = sessionStorage.getItem('movieId');

@@ -1,3 +1,5 @@
+//function to extract search query, store it in a session and redirect to results page
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#searchForm").addEventListener('submit', function (e) {
         e.preventDefault();

@@ -1,3 +1,5 @@
+//func to get movieS by SEARCH QUERY(extracting id from session store) with api call and display contents as unordered list-group
+
 function getMovies() {
 
     let query = sessionStorage.getItem('query');
@@ -11,7 +13,7 @@ function getMovies() {
                 let output = '';
 
                 if (typeof movies !== 'undefined' && movies.length > 0) {
-                    movies.map(movie => {
+                    movies.splice(0, 8).map(movie => {
                         if (movie.Poster == "N/A") movie.Poster = "https://via.placeholder.com/350x530?text=No+Image+found";
                         output += `
                         <div class="card">
@@ -21,9 +23,11 @@ function getMovies() {
                              
                           </div>
                         </div>
+                       
                         
                     `;
                     })
+
                 }
 
 

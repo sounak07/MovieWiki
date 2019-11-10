@@ -38,6 +38,9 @@ body {
   font-size: 20px;
 }
 
+/* Media queries for responsiveness */
+
+
 @media (max-width: 568px) {
   #home {
     padding: 300px 45px 158px 64px;
