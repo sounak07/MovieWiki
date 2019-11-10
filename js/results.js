@@ -63,6 +63,9 @@ function getMovies() {
         });
 }
 
+// function to implement show more button
+// It picks up all elements of class "show_more_results" and changes their display to "inline" and also makes the show more button go away
+
 function showMore() {
 
 
@@ -78,6 +81,9 @@ function showMore() {
     show_more.style.display = "none";
 
 }
+
+
+
 
 
 
