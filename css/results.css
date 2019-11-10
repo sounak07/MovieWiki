@@ -62,3 +62,7 @@ body {
     padding: 10px;
     text-align: center;
 }
+
+.show_more_results {
+    display: none;
+}

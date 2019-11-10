@@ -13,7 +13,7 @@ function getMovies() {
                 let output = '';
 
                 if (typeof movies !== 'undefined' && movies.length > 0) {
-                    movies.splice(0, 8).map(movie => {
+                    movies.slice(0, 8).map(movie => {
                         if (movie.Poster == "N/A") movie.Poster = "https://via.placeholder.com/350x530?text=No+Image+found";
                         output += `
                         <div class="card">
@@ -21,6 +21,20 @@ function getMovies() {
                           <div class="container">
                              <h5><b>${movie.Title}</b></h5>
                              
+                          </div>
+                        </div>
+                       
+                        
+                    `;
+                    })
+
+                    movies.slice(8, 100).map(movie => {
+                        if (movie.Poster == "N/A") movie.Poster = "https://via.placeholder.com/350x530?text=No+Image+found";
+                        output += `
+                        <div class="card show_more_results">
+                        <a onclick="movieSelected('${movie.imdbID}')" class="" href="#"><img src="${movie.Poster}"></a>
+                          <div class="container">
+                             <h5><b>${movie.Title}</b></h5>
                           </div>
                         </div>
                        
@@ -47,6 +61,22 @@ function getMovies() {
         .catch((err) => {
             console.log(err);
         });
+}
+
+function showMore() {
+
+
+    let show_more = document.getElementById("show_more");
+    let all = document.getElementsByClassName("show_more_results");
+
+
+    for (let i = 0; i < all.length; i++) {
+        all[i].style.display = "inline";
+    }
+
+
+    show_more.style.display = "none";
+
 }
 
 
